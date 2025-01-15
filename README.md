@@ -97,14 +97,6 @@ Push events are tracked with the following information:
 
 Note: Merge commits in push events are ignored to avoid duplicate entries with pull request merges.
 
-## Error Handling
-
-The application includes comprehensive error handling:
-- Invalid JSON payloads
-- Missing required fields
-- Database connection issues
-- All errors return appropriate HTTP status codes and error messages
-
 ## Development
 
 To run the application in development mode:
@@ -121,3 +113,8 @@ python run.py
    - Payload URL: `http://your-domain/receiver`
    - Content type: `application/json`
    - Select events: Pull requests and Pushes
+
+## Deployment on AWS
+Due to the constraint in the problem statement of using gunicorn as a production server I have performed the deployment of this repository on an AWS EC2 machine as gunicorn couldn't work on my window based machine. The webhook receiver endpoint of the github dummy repo 'action-repo' is also set in the url of the deployed code. 
+
+Deployment link: http://50.17.89.168:5000/
