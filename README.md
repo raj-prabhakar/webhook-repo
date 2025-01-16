@@ -118,3 +118,6 @@ python run.py
 Due to the constraint in the problem statement of using gunicorn as a production server I have performed the deployment of this repository on an AWS EC2 machine as gunicorn couldn't work on my window based machine. The webhook receiver endpoint of the github dummy repo 'action-repo' is also set in the url of the deployed code. 
 
 Deployment link: http://50.17.89.168:5000/
+
+## Video Demo
+Loom Link: https://www.loom.com/share/236cb0611e784c0a8c48a6eb79d771c7?sid=e7942339-1ed6-4e67-be5c-c4f068c7f589
